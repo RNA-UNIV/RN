@@ -1,6 +1,6 @@
 import numpy as np
 #from matplotlib import pyplot as plt
-from grafica_SOM import *
+from rna.fuentes.grafica_SOM import *
 
 def calcSilohuette(entradas, centros):
     # ENTRADAS es una matriz de CantEjemplos x nAtrib

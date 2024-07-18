@@ -4,7 +4,7 @@ import time
 from matplotlib import pylab as plt
 from IPython import display
 
-from grafica import *
+from rna.fuentes.grafica import *
 
 class NeuronaGradiente(object):
     """
