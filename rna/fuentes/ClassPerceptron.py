@@ -80,5 +80,10 @@ class Perceptron(object):
         return np.dot(X, self.w_) + self.b_
 
     def predict(self, X):
-        """Return class label after unit step"""
+        """Return class label"""
         return np.where(self.net_input(X) >= 0.0, 1, 0)
+
+    def prob_positive_class(self, X):
+        """Confidence level for class > 0 """
+        netas = self.net_input(X)
+        return 1/(1+np.exp(-netas))

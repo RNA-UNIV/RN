@@ -1,6 +1,6 @@
 import numpy as np
 import time
-
+import matplotlib
 from matplotlib import pylab as plt
 from IPython import display
 
@@ -87,6 +87,7 @@ class NeuronaLineal(object):
                 ph = dibuPtosRecta(puntos,T, np.array([self.w_, -1],dtype=object), self.b_, self.title, ph)
             
             i = i + 1
+        
         return self
 
     def net_input(self, X):

@@ -16,7 +16,7 @@ setup(
     description="Paquete para aprendizaje de redes neuronales",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/tu_usuario/mi_paquete",
+    url="https://github.com/RNA-UNIV/rna/",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
