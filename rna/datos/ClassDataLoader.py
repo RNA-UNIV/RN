@@ -138,7 +138,7 @@ class DataLoader:
 
         info_file_path = os.path.join(local_path, 'info.json')
         if not os.path.exists(info_file_path):
-            raise FileNotFoundError(f"No se encontró información sobre el dataset \"{nombre}\"")
+            raise FileNotFoundError(f"No se encontrÃ³ informaciÃ³n sobre el dataset \"{nombre}\"")
 
         with open(info_file_path, 'r', encoding='utf-8') as f:
             info_data = json.load(f)
