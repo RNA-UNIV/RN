@@ -153,6 +153,6 @@ class DataLoader:
 
         if not os.path.exists(local_path):
             os.makedirs(local_path, exist_ok=True)
-            cls._(github_path, local_path)
+            cls._download_directory(github_path, local_path)  # Corregido aquí
 
         return local_path
