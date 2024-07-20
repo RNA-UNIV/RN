@@ -13,7 +13,9 @@ class DataLoader:
     _instance = None
     _base_path = None
     _base_url = "https://api.github.com/repos/RNA-UNIV/rna/contents"
-
+    _models_path = None
+    _data_path = None
+    _samples_path = None
 
     def __new__(cls, *args, **kwargs):
         if not cls._instance:
@@ -26,15 +28,15 @@ class DataLoader:
     def _create_directories(cls):
         if not os.path.exists(cls._base_path):
             os.makedirs(cls._base_path)
-        cls.models_path = os.path.join(cls._base_path, cls._models_dir)
-        cls.data_path = os.path.join(cls._base_path, cls._data_dir)
-        cls.samples_path = os.path.join(cls._base_path, cls._samples_dir)
-        os.makedirs(cls.models_path, exist_ok=True)
-        os.makedirs(cls.data_path, exist_ok=True)
-        os.makedirs(cls.samples_path, exist_ok=True)
+        cls._models_path = os.path.join(cls._base_path, cls._models_dir)
+        cls._data_path = os.path.join(cls._base_path, cls._data_dir)
+        cls._samples_path = os.path.join(cls._base_path, cls._samples_dir)
+        os.makedirs(cls._models_path, exist_ok=True)
+        os.makedirs(cls._data_path, exist_ok=True)
+        os.makedirs(cls._samples_path, exist_ok=True)
 
     @classmethod
-    def _list_files(cls, subfolder, filetype =['file', 'dir']):
+    def _list_files(cls, subfolder, filetype=['file', 'dir']):
         url = f"{cls._base_url}/{subfolder}"
         response = requests.get(url)
         if response.status_code == 200:
@@ -83,7 +85,7 @@ class DataLoader:
     @classmethod
     def load_dataframe(cls, nombre, encoding=None, separator=None):
         nombre = nombre.lower()
-        local_path = os.path.join(cls.data_path, nombre)
+        local_path = os.path.join(cls._data_path, nombre)
         github_path = f"{cls._repo_download_dir}/{cls._data_dir}/{nombre}"
 
         if not os.path.exists(local_path):
@@ -129,7 +131,7 @@ class DataLoader:
     @classmethod
     def dataset_info(cls, nombre):
         nombre = nombre.lower()
-        local_path = os.path.join(cls.data_path, nombre)
+        local_path = os.path.join(cls._data_path, nombre)
         github_path = f"{cls._repo_download_dir}/{cls._data_dir}/{nombre}"
 
         if not os.path.exists(local_path):
@@ -148,11 +150,11 @@ class DataLoader:
     @classmethod
     def dataset_directory(cls, nombre):
         nombre = nombre.lower()
-        local_path = os.path.join(cls.data_path, nombre)
+        local_path = os.path.join(cls._data_path, nombre)
         github_path = f"{cls._repo_download_dir}/{cls._data_dir}/{nombre}"
 
         if not os.path.exists(local_path):
             os.makedirs(local_path, exist_ok=True)
-            cls._download_directory(github_path, local_path)  # Corregido aquí
+            cls._download_directory(github_path, local_path)
 
         return local_path
