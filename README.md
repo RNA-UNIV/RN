@@ -5,7 +5,6 @@
   <hr>
 </div>
 
-
 El repositorio para aprendizaje de redes neuronales está disponible de forma  pública en https://github.com/RNA-UNIV/rna
 
 El objetivo del repositorio es el de proveer funciones y clases con implementaciones básicas de algoritmos de redes neuronales, carga de datasets, carga de modelos y carga de ejemplos para pruebas y visualizciones.
