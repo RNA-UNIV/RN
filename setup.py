@@ -11,8 +11,8 @@ setup(
     install_requires=[
         "requests",
         "pandas",
+        "pillow",
         "chardet",
-        "json",
         "numpy",
         "zipfile"
     ],
