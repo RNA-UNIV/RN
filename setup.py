@@ -13,8 +13,7 @@ setup(
         "pandas",
         "pillow",
         "chardet",
-        "numpy",
-        "zipfile"
+        "numpy"
     ],
     author="César",
     author_email="tu@email.com",
