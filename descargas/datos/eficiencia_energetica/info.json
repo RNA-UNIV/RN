@@ -4,7 +4,6 @@
     "autor": "Angelos Tzikopoulos, Eleftherios Tzirakis, Andreas Karakatsanis, Argyris Anastasiou, Jörg L. M. Hensen, Maria Papadopoulou, and Maria Karagianni",
     "url": "https://archive.ics.uci.edu/ml/datasets/Energy+efficiency",
     "muestras": 768,
-    "atributos": 8,
     "clases": "N/A",
     "faltantes": "No",
     "atributos": {

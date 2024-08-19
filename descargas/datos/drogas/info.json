@@ -5,6 +5,7 @@
     "url": "https://www.kaggle.com/datasets/prathamtripathi/drug-classification",
     "muestras": 200,
     "faltantes": "No",
+    "clases": 5,
     "atributos": {
         "Age": "Edad del paciente",
         "Sex": "Sexo del paciente",

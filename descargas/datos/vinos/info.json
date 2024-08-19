@@ -7,7 +7,7 @@
     "clases": 3,
     "faltantes": "No",
     "atributos": {
-        "Class": "Cultivar de vino (1, 2 o 3)"
+        "Class": "Cultivar de vino (1, 2 o 3)",
         "Alcohol": "Contenido de alcohol",
         "Malic_acid": "Ácido málico",
         "Ash": "Ceniza",
@@ -20,6 +20,6 @@
         "Color_intensity": "Intensidad de color",
         "Hue": "Matiz",
         "OD280/OD315_of_diluted_wines": "OD280/OD315 de vinos diluidos",
-        "Proline": "Prolina",
+        "Proline": "Prolina"
     }
 }

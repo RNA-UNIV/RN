@@ -4,6 +4,7 @@
     "autor": "rna",
     "url": "https://github.com/RNA-UNIV/rna/tree/main/descargas/datos/frutas_test",
     "muestras": 16,
+    "clases": 2,
     "faltantes": "No",
     "atributos": {
         "Diametro": "Diametro en centímetros de la fruta",

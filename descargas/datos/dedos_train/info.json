@@ -4,7 +4,7 @@
     "autor": "Pavel Koryakin",
     "url": "https://www.kaggle.com/datasets/lnanhkhoa/fingers",
     "muestras": 18000,
-    "clases": "0, 1, 2, 3, 4, 5 (Número de dedos)",
+    "clases": 6,
     "faltantes": "No",
     "atributos": {
         "imagen": "Imagen de la mano",

@@ -5,6 +5,7 @@
     "url": "https://github.com/RNA-UNIV/rna/tree/main/descargas/datos/hojas",
     "muestras": 12,
     "faltantes": "No",
+    "clases": 2,
     "atributos": {
         "Perimetro": "Perímetro de la hoja",
         "Area": "Área de la hoja",
